@@ -18,4 +18,9 @@ export default class BookController {
         const service = new BookService(new BookRepository());
         res.json(service.createPurchase(parseInt(id)));
     }
+
+    create(req, res) {
+        const service = new BookService(new BookRepository());
+        res.status(201).json(service.registerBook(req.body));
+    }
 }

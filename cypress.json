@@ -1,3 +1,9 @@
 {
-    "baseUrl": "http://localhost:3000"
+    "baseUrl": "http://localhost:3000",
+    "testFiles": [
+        "authentication/register.spec.js",
+        "authentication/login.spec.js",
+        "store/book-list.spec.js",
+        "store/show-a-book.spec.js"
+      ]
 }

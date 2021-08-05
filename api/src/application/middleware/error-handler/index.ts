@@ -8,7 +8,9 @@ export default class ErrorHandlerMiddleware {
             return;
         }
         res.status(500).json({
-            error: `${error.name} ${error.message}`,
+            code: 500,
+            status: "error",
+            message: `${error.name} ${error.message}`,
         });
     }
 }
